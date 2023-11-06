@@ -29,10 +29,36 @@ input {
 button {
   font-size: 18px;
 }
-#table{
-
+td,
+th {
+  /*styles the td and th */
+  padding: 15px 20px;
+  text-align: center;
+  padding: 7px;
+  border: #4e95f4 thin solid;
 }
-td, tr{
-  border: 1px solid;
+th {
+  /*styles just the th with different colors and font */
+  background-color: #ee9ca7;
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
 }
-
+th:nth-child(1) {
+  color: white;
+}
+table{
+  margin: auto;
+}
+#table {
+  padding-top: 50px;
+  font-weight: bold;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 500px;
+}
+th {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
