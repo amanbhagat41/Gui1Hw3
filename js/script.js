@@ -1,3 +1,14 @@
+/*
+File: script.js
+GUI Assignment: HW3 Creating an Interactive Dynamic Table
+This program creates a Interacrive dynamic table using inputs set into a form
+and outputs a table that is scrollable if too big and the headers are sticky so
+they will follow the scroll
+Aman Bhagat, Umass Lowell Computer Science, aman_bhagat@student.uml.edu
+Copyright (c) 2021 by Aman.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+updated by AB on Oct 24 5:51 pm
+*/
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
   var minCol = Number(document.getElementById("minCol").value);
@@ -38,7 +49,12 @@ document.querySelector("form").addEventListener("submit", function (e) {
     errorElement.innerText = "The Range of the table is -50 - 50";
     errorMes.appendChild(errorElement);
     return;
-  } else {
+  }else if(maxCol % 1 || minCol %1 || maxRow%1 || minRow%1){
+    errorMes.innerHTML = "";
+    errorElement.innerText = "No decimals can be used";
+    errorMes.appendChild(errorElement);
+    return;
+  }else {
     errorMes.innerHTML = "";
     errorElement.innerText =
       "Creating Table, All empty boxes are replaced with 0";

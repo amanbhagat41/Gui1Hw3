@@ -1,3 +1,14 @@
+/*
+File: style.css
+GUI Assignment: HW3 Creating an Interactive Dynamic Table
+This program creates a Interacrive dynamic table using inputs set into a form
+and outputs a table that is scrollable if too big and the headers are sticky so
+they will follow the scroll
+Aman Bhagat, Umass Lowell Computer Science, aman_bhagat@student.uml.edu
+Copyright (c) 2021 by Aman.  All rights reserved.  May be freely copied or 
+excerpted for educational purposes with credit to the author. 
+updated by AB on Oct 24 5:51 pm
+*/
 body {
   text-align: center;
   background-color: bisque;
