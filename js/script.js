@@ -73,7 +73,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
         const colH = document.createElement("th");
         colH.innerText = j;
         row.appendChild(colH);
-      } else if (j == minCol - 1) {
+      } else if (j === minCol - 1) {
         const colH = document.createElement("th");
         colH.innerText = i;
         row.appendChild(colH);
