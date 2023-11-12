@@ -10,17 +10,17 @@ excerpted for educational purposes with credit to the author.
 updated by AB on Oct 24 5:51 pm
 */
 body {
-  text-align: center;
-  background-color: bisque;
+  text-align: center; /* align to center   */
+  background-color: bisque;/* backgroudn color bisque   */
 }
-form {
+form { /* style the form  */
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
   width: 400px;
   height: auto;
   border: solid black;
-  border-image: linear-gradient(
+  border-image: linear-gradient( /* make the border for the form  */
       to right,
       rgb(179, 80, 149) 25%,
       yellow 25%,
@@ -31,44 +31,41 @@ form {
     )
     5;
 }
-input {
+input { /* style the inputs   */
   margin-bottom: 10px;
 }
-.val {
+.val {/* style the value inputs  */
   text-align: right;
 }
-button {
+button { /* style the button */
   font-size: 18px;
 }
 td,
-th {
-  /*styles the td and th */
+th {  /*styles the td and th */
   padding: 15px 20px;
-  text-align: center;
-  padding: 7px;
-  border: #4e95f4 thin solid;
+  text-align: center; 
+  border: #f44eba thin solid;
+  padding: 12px;
+ 
 }
-th {
-  /*styles just the th with different colors and font */
+th { /*styles just the th with bg color*/
   background-color: #ee9ca7;
   color: white;
-  font-weight: 200;
-  text-transform: uppercase;
 }
-th:nth-child(1) {
+th:nth-child(1) { /* the header is white  */
   color: white;
 }
-table{
+table{ /* makes the table center   */
   margin: auto;
 }
-#table {
+#table { /* makes the table scrollable   */
   padding-top: 50px;
   font-weight: bold;
   overflow-x: auto;
   overflow-y: auto;
   max-height: 500px;
 }
-th {
+th { /* makes the headers follow when scrolling  */
   position: sticky;
   top: 0;
   left: 0;
