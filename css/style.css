@@ -42,10 +42,10 @@ button { /* style the button */
 }
 td,
 th {  /*styles the td and th */
-  padding: 15px 20px;
+  padding: 15px;
   text-align: center; 
   border: #f44eba thin solid;
-  padding: 12px;
+
  
 }
 th { /*styles just the th with bg color*/
